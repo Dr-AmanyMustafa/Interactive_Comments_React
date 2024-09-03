@@ -110,9 +110,9 @@ const CommentsPage = () => {
         <>
           <div key={comment.id} className="comment">
             <div className="comment-vote">
-              <button onClick={() => upvoteComment(comment.id)}><img src={"Imgs/icon-plus.svg"}></img></button>
-              <span>{comment.votes}</span>
-              <button onClick={() => downvoteComment(comment.id, -1)}><img src={"/../../Imgs/icon-minus.svg"}></img></button>
+              <button onClick={() => upvoteComment(comment.id)}><img className="plus" src={"Imgs/icon-plus.svg"}></img></button>
+              <span className="number">{comment.votes}</span>
+              <button onClick={() => downvoteComment(comment.id, -1)}><img className="minus" src={"/../../Imgs/icon-minus.svg"}></img></button>
             </div>
 
             <div className="comment-content">
@@ -178,9 +178,9 @@ const CommentsPage = () => {
                   {comment.replies && comment.replies.length > 0 && comment.replies.map((reply) => (
                     <div key={reply.id} className="reply-container">
                         <div className="comment-vote">
-                          <button onClick={() => handleReplyVote(reply.id, 1)}><img src={"/../../Imgs/icon-plus.svg"}></img></button>
-                          <span>{votes[reply.id] || 0}</span>
-                          <button onClick={() => handleReplyVote(reply.id, -1)}><img src={"/../../Imgs/icon-minus.svg"}></img></button>
+                          <button onClick={() => handleReplyVote(reply.id, 1)}><img className="plus2" src={"/../../Imgs/icon-plus.svg"}></img></button>
+                          <span className="number2">{votes[reply.id] || 0}</span>
+                          <button onClick={() => handleReplyVote(reply.id, -1)}><img className="minus2" src={"/../../Imgs/icon-minus.svg"}></img></button>
                         </div>                      
                         <div className="vote-header">
                           <div className="reply-container-header"> 

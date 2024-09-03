@@ -80,7 +80,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 15px; 
+    margin-top: 30px;
     background-color: #F5F6FA;
     width: 50px;
     border-radius: 8px;
@@ -91,6 +92,24 @@
     border: none;
     cursor: pointer;
     font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+  .number{
+    position: relative;
+    top: -8px;
+  }
+  .number2{
+    position: relative;
+    top: -8px;
+  }
+  .plus2{
+    position: relative;
+    left: 5px;
+  }
+  .minus2{
+    position: relative;
+    left: 5px;
   }
   .user-picture {
     width: 40px;
@@ -163,7 +182,7 @@
     margin-top: 10px;
     padding: 10px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   .vote-header{
     display: flex;
@@ -234,12 +253,12 @@
 
   .Btns{
     position: relative;
-    top: 60px;
+    top: 70px;
 
   }
   .replyBtns{    
     position: relative;
-    top: -60px;
+    top: -70px;
     left: -60px;
   }
   .replyBtns2{    
@@ -252,18 +271,17 @@
   .reply-section-Btns{
     position: relative;
     top: 80px;
-    left: -80px;
+    left: -40px;
     margin-bottom: -20px;
   }
   .comment-content p {
     margin: 0 80px 50px 0;
   } 
   .reply-container {
-    width: 110%;
-    margin-top: 10px;
-    margin-right: 40px;
+    width: 120%;
+    margin-right: -120px;
     position: relative;
-    left: 30px;
+    left: -55px;
   }
  
   }
